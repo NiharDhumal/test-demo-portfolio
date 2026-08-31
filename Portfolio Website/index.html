@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihar Dhumal - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="top-panel">
+    <div class="panel-brand">Nihar Dhumal</div>
+    <nav class="panel-nav">
+      <a href="#about" class="active">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    
+    <section id="hero" class="profile-header">
+      <img src="profile.jpeg" alt="Nihar Dhumal" class="profile-photo">
+      <h1>Nihar Dhumal</h1>
+      <p>I am a Second Year Computer Science student currently exploring the Web Development field.</p>
+      <a href="resume.pdf" download class="btn-primary">Download Resume</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I am Nihar Dhumal. I am looking forward to building my skills and learning a lot in the field of web development and making interactive design. I have strong fundamentals in python programming. Also, I know the basics of MySQL(Crud Operations). I am eager to learn full stack development. I am a team player and a quick learner.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="project-card">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p><strong>Bhavans College, Andheri (Under Mumbai University)<br></strong> • Second Year Student (2025 – 2028)</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Python</span>
+        <span class="badge">Responsive Design</span>
+        <span class="badge">Git & GitHub</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Project Info</h2>
+      
+      <div class="project-card">
+        <h3>Python Café Ordering System</h3>
+        <p>• Designed and implemented a menu‑driven café ordering application using Python.<br>
+           • Used dictionaries for menu storage and pricing with scalable structure.<br>
+           • Implemented input validation and error-handling for incorrect selections.<br>
+           • Applied loops, conditionals, and dynamic bill calculation.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/nihardhumal" target="_blank">View Code on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Rock–Paper–Scissors Game (Python)</h3>
+        <p>• Built a command-line RPS game implementing core game logic and user interaction.<br>
+           • Used random module for dynamic computer moves.<br>
+           • Added input validation and clear outcome messaging.<br>
+           • Demonstrated strong use of dictionaries, loops, and conditional logic.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/nihardhumal" target="_blank">View Code on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:nihardhumal26@gmail.com">nihardhumal26@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/nihar-dhumal-b4b3303b1" target="_blank">linkedin.com/in/Nihar Dhumal</a></p>
+      <p>GitHub: <a href="https://github.com/NiharDhumal" target="_blank">github.com/NiharDhumal</a></p>
+    </section>
+
+  </main>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".panel-nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 120;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((a) => {
+        a.classList.remove("active");
+        if (a.getAttribute("href") === `#${current}`) {
+          a.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+:root {
+  --bg: #0f172a;
+  /* Translucent dark navigation bar */
+  --panel-bg: rgba(15, 23, 42, 0.75); 
+  /* Frosted glass cards */
+  --card-bg: rgba(255, 255, 255, 0.88); 
+  /* Bright cyan-blue accent for dark backgrounds */
+  --accent: #38bdf8; 
+  --accent-hover: #0284c7;
+  /* Card links accent */
+  --card-accent: #2563eb; 
+  --text: #ffffff;
+  --text-dark: #0f172a;
+  --text-muted: #e2e8f0;
+  --border: rgba(255, 255, 255, 0.2);
+  --header-height: 70px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('aurora.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text);
+  padding-top: var(--header-height);
+}
+
+/* Glassmorphism Fixed Top Panel */
+.top-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--panel-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.panel-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.panel-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.panel-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.panel-nav a:hover, .panel-nav a.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Main Content Area */
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 80px 20px;
+}
+
+/* Profile Section */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+/* Resume Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: var(--accent);
+  color: #0f172a;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #7dd3fc;
+  text-decoration: none;
+}
+
+/* Sections & Typography Fixes */
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: calc(var(--header-height) + 10px);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: var(--accent);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  line-height: 1.7;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills Badges */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.badge {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Frosted Glass Cards */
+.project-card {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 24px;
+  border-radius: 12px;
+  margin-top: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3,
+.project-card p,
+.project-card strong {
+  color: var(--text-dark);
+  text-shadow: none;
+}
+
+.project-links {
+  margin-top: 12px;
+}
+
+.project-card a {
+  color: var(--card-accent);
+  font-weight: 600;
+}
+
+/* Global Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .top-panel {
+    padding: 0 15px;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 12px;
+  }
+
+  :root {
+    --header-height: 100px;
+  }
+
+  .panel-nav {
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .panel-nav a {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+  }
+}

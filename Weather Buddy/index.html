@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+     
+    }
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      height: 100%;
+       flex-direction: column;
+    }
+    .heading{
+        font: 800;
+        font-size: 50px;
+        color: teal;
+        font-style: italic;
+    }
+    .card{
+        background: teal;
+        padding: 20px;
+
+    }
+    .card input{
+        padding: 5px;
+
+    }
+    .card button{
+        padding: 5px;
+        background: #000;
+        color: white;
+
+    }
+    .output{
+        color: teal;
+        font-weight: 800;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="heading">Weather Buddy</h1>
+        <div class="card">
+          <input type="text" id="weather" />
+          <button class="button">what to carry</button>
+        </div>
+        <span class="output"></span>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let weather = document.getElementById("weather")
+    let button = document.querySelector(".button")
+    let output = document.querySelector(".output")
+
+    button.addEventListener("click",()=>{
+   
+        if (weather.value === "sunny") {
+            output.textContent = "take ur sunglasses"
+        }
+        else if(weather.value === "rainy"){
+            output.textContent = "take ur umbrella"
+        }
+         else {
+            alert("invalid!")
+        }
+        
+    })
+  </script>
+</html>

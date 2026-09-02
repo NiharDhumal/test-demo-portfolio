@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzz Success Stories</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="nav-container">
+<a href="index.html" class="logo"><img src="https://cdn.muzz.com/website-v4/img/shared/logo-large.svg" alt="Muzz"></a>
+<nav class="nav-links">
+<a href="gold.html">Gold</a>
+<span class="nav-disabled">Events</span>
+<a href="blog.html">Blog</a>
+<span class="nav-disabled">Careers</span>
+<a href="success-stories.html" class="active">Success Stories</a>
+</nav>
+<div class="nav-right">
+<div class="country-selector">
+<button class="country-button" id="countryButton"><span id="selectedFlag">🇬🇧</span><span id="selectedLanguage">English</span><span>⌄</span></button>
+<div class="country-menu" id="countryMenu">
+<button class="country-option" data-flag="🇬🇧" data-language="English">🇬🇧 English</button>
+<button class="country-option" data-flag="🇺🇸" data-language="English (US)">🇺🇸 English (US)</button>
+<button class="country-option" data-flag="🇮🇳" data-language="हिन्दी">🇮🇳 हिन्दी</button>
+<button class="country-option" data-flag="🇵🇰" data-language="اردو">🇵🇰 اردو</button>
+<button class="country-option" data-flag="🇸🇦" data-language="العربية">🇸🇦 العربية</button>
+</div>
+</div>
+<button class="signup-button" onclick="openSignup()">Sign Up</button>
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+</div>
+</div>
+</header>
+
+<!-- SUCCESS HERO -->
+<section class="page-hero success-hero">
+<p class="eyebrow">#METONMUZZ</p>
+<h1>Success <span>Stories.</span></h1>
+<p>Alhamdulillah, millions of Muslims have found someone special through Muzz.</p>
+<button class="primary-button" onclick="openSignup()">Share Your Story</button>
+</section>
+
+<!-- SUCCESS INTRO -->
+<section class="success-intro">
+<div>
+<p class="eyebrow">REAL PEOPLE</p>
+<h2>Over 1 million success stories!</h2>
+<p>From first conversations to wedding days, these are some of the couples who found each other through Muzz.</p>
+</div>
+</section>
+
+<!-- STORIES -->
+<section class="success-stories">
+<div class="success-card">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" alt="Wedding couple">
+<div>
+<span>THE LONG FLIGHT TO FOREVER</span>
+<h2>Sometimes love is worth travelling for.</h2>
+<p>They met through Muzz and discovered that distance was never going to stop them.</p>
+</div>
+</div>
+
+<div class="success-card reverse">
+<div>
+<span>MEETING TO MARRIAGE IN JUST A MONTH</span>
+<h2>One match changed everything.</h2>
+<p>A simple conversation became a relationship and then a marriage.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=85" alt="Wedding">
+</div>
+
+<div class="success-card">
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=85" alt="Wedding celebration">
+<div>
+<span>UNINVITED WEDDING GUESTS</span>
+<h2>A story that started with one match.</h2>
+<p>Their Muzz journey eventually led to a beautiful wedding celebration.</p>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+<div class="section-heading">
+<p class="eyebrow">HAPPY COUPLES</p>
+<h2>Love stories from our community.</h2>
+</div>
+
+<div class="testimonial-grid">
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>“We both joined Muzz hoping to find someone serious about marriage. Somehow we found each other.”</p>
+<strong>— A Muzz couple</strong>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>“The app made it easy to talk and get to know each other properly before taking the next step.”</p>
+<strong>— A Muzz couple</strong>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>“Alhamdulillah, our first conversation became the beginning of our marriage.”</p>
+<strong>— A Muzz couple</strong>
+</div>
+</div>
+</section>
+
+<!-- SHARE -->
+<section class="share-story">
+<h2>Met your partner on Muzz?</h2>
+<p>We'd love to hear your story.</p>
+<button class="primary-button" onclick="openSignup()">Share Your Story</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-content">
+<div><h3>Muzz</h3><p>Where Muslims meet.</p></div>
+<div><h4>Explore</h4><a href="gold.html">Gold</a><a href="blog.html">Blog</a><a href="success-stories.html">Success Stories</a></div>
+<div><h4>Information</h4><span>Events</span><span>Careers</span></div>
+</div>
+<p class="copyright">© 2026 Muzz. All rights reserved.</p>
+</footer>
+
+<!-- SIGN UP MODAL -->
+<div class="signup-modal" id="signupModal">
+<div class="signup-box">
+<button class="close-modal" onclick="closeSignup()">×</button>
+<p class="eyebrow">JOIN MUZZ</p>
+<h2>Create your account</h2>
+<p>Start your journey towards finding your perfect partner.</p>
+<form onsubmit="submitSignup(event)">
+<input type="text" id="signupName" placeholder="Your name" required>
+<input type="email" id="signupEmail" placeholder="Email address" required>
+<select id="signupCountry" required>
+<option value="">Select your country</option>
+<option>India</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Pakistan</option>
+<option>Saudi Arabia</option>
+</select>
+<button type="submit" class="primary-button">Create Account</button>
+</form>
+<p id="signupMessage" class="signup-message"></p>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

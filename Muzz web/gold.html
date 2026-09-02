@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzz Gold</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="nav-container">
+<a href="index.html" class="logo">
+<img src="https://cdn.muzz.com/website-v4/img/shared/logo-large.svg" alt="Muzz">
+</a>
+
+<nav class="nav-links">
+<a href="gold.html" class="active">Gold</a>
+<span class="nav-disabled">Events</span>
+<a href="blog.html">Blog</a>
+<span class="nav-disabled">Careers</span>
+<a href="success-stories.html">Success Stories</a>
+</nav>
+
+<div class="nav-right">
+<div class="country-selector">
+<button class="country-button" id="countryButton">
+<span id="selectedFlag">🇬🇧</span>
+<span id="selectedLanguage">English</span>
+<span>⌄</span>
+</button>
+<div class="country-menu" id="countryMenu">
+<button class="country-option" data-flag="🇬🇧" data-language="English">🇬🇧 English</button>
+<button class="country-option" data-flag="🇺🇸" data-language="English (US)">🇺🇸 English (US)</button>
+<button class="country-option" data-flag="🇮🇳" data-language="हिन्दी">🇮🇳 हिन्दी</button>
+<button class="country-option" data-flag="🇵🇰" data-language="اردو">🇵🇰 اردو</button>
+<button class="country-option" data-flag="🇸🇦" data-language="العربية">🇸🇦 العربية</button>
+</div>
+</div>
+<button class="signup-button" onclick="openSignup()">Sign Up</button>
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+</div>
+</div>
+</header>
+
+<!-- GOLD HERO -->
+<section class="gold-premium-hero">
+<div class="gold-hero-copy">
+<p class="gold-eyebrow">MUZZ GOLD</p>
+<h1>Find the right person <span>faster.</span></h1>
+<p>Muzz Gold gives you the tools to make it happen.</p>
+<div class="gold-buttons">
+<button class="gold-main-button" onclick="openSignup()">Upgrade To Gold</button>
+<a href="index.html" class="gold-secondary-button">Back to Muzz</a>
+</div>
+</div>
+<div class="gold-hero-image">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85" alt="Muslim wedding">
+<div class="gold-image-badge">★ MUZZ GOLD</div>
+</div>
+</section>
+
+<!-- GOLD INTRO -->
+<section class="gold-premium-intro">
+<p class="eyebrow">MORE TOOLS. MORE CONTROL.</p>
+<h2>Everything you need to find your match.</h2>
+<p>Gold gives you extra features designed to make your search easier and more effective.</p>
+</section>
+
+<!-- MUST HAVES -->
+<section class="gold-image-feature">
+<div class="gold-feature-photo">
+<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=85" alt="Couple">
+</div>
+<div class="gold-feature-content">
+<p class="eyebrow">01</p>
+<h2>Set your “must-haves”</h2>
+<p>Make your preferences clear and focus on people who meet the qualities that matter most to you.</p>
+<div class="gold-mini-profile">
+<strong>Must have</strong>
+<span>Practising Muslim</span>
+<span>Wants children</span>
+<span>Lives nearby</span>
+</div>
+</div>
+</section>
+
+<!-- UNLIMITED LIKES -->
+<section class="gold-image-feature reverse">
+<div class="gold-feature-content">
+<p class="eyebrow">02</p>
+<h2>Send more likes every day</h2>
+<p>Get more opportunities to connect with people you are interested in.</p>
+<div class="gold-filter-box">
+<strong>More likes</strong>
+<p>Keep discovering potential matches.</p>
+</div>
+</div>
+<div class="gold-feature-photo">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85" alt="Wedding">
+</div>
+</section>
+
+<!-- COMPLIMENT -->
+<section class="gold-image-feature">
+<div class="gold-feature-photo">
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=85" alt="Wedding celebration">
+</div>
+<div class="gold-feature-content">
+<p class="eyebrow">03</p>
+<h2>Free daily Compliment credit</h2>
+<p>Stand out from the crowd by sending someone a thoughtful compliment.</p>
+</div>
+</section>
+
+<!-- BOOST -->
+<section class="gold-boost-section">
+<div>
+<p class="eyebrow">04</p>
+<h2>Free weekly Profile Boost</h2>
+<p>Get your profile seen by more people and increase your chances of finding a match.</p>
+<button class="gold-main-button" onclick="openSignup()">Get Gold</button>
+</div>
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Couple">
+</section>
+
+<!-- UNDO -->
+<section class="gold-image-feature reverse">
+<div class="gold-feature-content">
+<p class="eyebrow">05</p>
+<h2>Change your mind</h2>
+<p>Accidentally passed on someone? Gold lets you go back and take another look.</p>
+</div>
+<div class="gold-feature-photo">
+<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=85" alt="Couple">
+</div>
+</section>
+
+<!-- NO BLURRED -->
+<section class="gold-image-feature">
+<div class="gold-feature-photo">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85" alt="Wedding couple">
+</div>
+<div class="gold-feature-content">
+<p class="eyebrow">06</p>
+<h2>No blurred photos</h2>
+<p>See photos clearly and get a better idea of who you are connecting with.</p>
+</div>
+</section>
+
+<!-- VIP -->
+<section class="gold-image-feature reverse">
+<div class="gold-feature-content">
+<p class="eyebrow">07</p>
+<h2>VIP Badge</h2>
+<p>Show that you're a Gold member with a special VIP badge on your profile.</p>
+</div>
+<div class="gold-feature-photo">
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=85" alt="Wedding">
+</div>
+</section>
+
+<!-- REMATCH -->
+<section class="gold-image-feature">
+<div class="gold-feature-photo">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" alt="Wedding couple">
+</div>
+<div class="gold-feature-content">
+<p class="eyebrow">08</p>
+<h2>Rematch</h2>
+<p>Reconnect with someone when you both missed your chance the first time.</p>
+</div>
+</section>
+
+<!-- COMPARISON -->
+<section class="gold-comparison">
+<p class="eyebrow">MUZZ VS GOLD</p>
+<h2>Get more from your search.</h2>
+
+<div class="comparison-table">
+<div class="comparison-row comparison-header">
+<span>Feature</span>
+<span>Free</span>
+<span>Gold</span>
+</div>
+<div class="comparison-row">
+<span>Search filters</span>
+<span>✓</span>
+<span>✓</span>
+</div>
+<div class="comparison-row">
+<span>Chat</span>
+<span>✓</span>
+<span>✓</span>
+</div>
+<div class="comparison-row">
+<span>More likes</span>
+<span>—</span>
+<span>✓</span>
+</div>
+<div class="comparison-row">
+<span>Profile Boost</span>
+<span>—</span>
+<span>✓</span>
+</div>
+<div class="comparison-row">
+<span>Undo</span>
+<span>—</span>
+<span>✓</span>
+</div>
+<div class="comparison-row">
+<span>No blurred photos</span>
+<span>—</span>
+<span>✓</span>
+</div>
+</div>
+</section>
+
+<!-- GOLD CTA -->
+<section class="gold-premium-cta">
+<div>
+<p class="eyebrow">READY?</p>
+<h2>Find your person faster.</h2>
+<p>Join Muzz Gold and get more tools for your marriage journey.</p>
+<button class="gold-main-button" onclick="openSignup()">Upgrade To Gold</button>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-content">
+<div>
+<h3>Muzz</h3>
+<p>Where Muslims meet.</p>
+</div>
+<div>
+<h4>Explore</h4>
+<a href="gold.html">Gold</a>
+<a href="blog.html">Blog</a>
+<a href="success-stories.html">Success Stories</a>
+</div>
+<div>
+<h4>Information</h4>
+<span>Events</span>
+<span>Careers</span>
+</div>
+</div>
+<p class="copyright">© 2026 Muzz. All rights reserved.</p>
+</footer>
+
+<!-- SIGN UP MODAL -->
+<div class="signup-modal" id="signupModal">
+<div class="signup-box">
+<button class="close-modal" onclick="closeSignup()">×</button>
+<p class="eyebrow">JOIN MUZZ</p>
+<h2>Create your account</h2>
+<p>Start your journey towards finding your perfect partner.</p>
+<form onsubmit="submitSignup(event)">
+<input type="text" id="signupName" placeholder="Your name" required>
+<input type="email" id="signupEmail" placeholder="Email address" required>
+<select id="signupCountry" required>
+<option value="">Select your country</option>
+<option>India</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Pakistan</option>
+<option>Saudi Arabia</option>
+</select>
+<button type="submit" class="primary-button">Create Account</button>
+</form>
+<p id="signupMessage" class="signup-message"></p>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

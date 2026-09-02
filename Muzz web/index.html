@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzz - Where Muslims Meet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="nav-container">
+<a href="index.html" class="logo">
+<img src="https://cdn.muzz.com/website-v4/img/shared/logo-large.svg" alt="Muzz">
+</a>
+
+<nav class="nav-links">
+<a href="gold.html">Gold</a>
+<span class="nav-disabled">Events</span>
+<a href="blog.html">Blog</a>
+<span class="nav-disabled">Careers</span>
+<a href="success-stories.html">Success Stories</a>
+</nav>
+
+<div class="nav-right">
+<div class="country-selector">
+<button class="country-button" id="countryButton">
+<span id="selectedFlag">🇬🇧</span>
+<span id="selectedLanguage">English</span>
+<span>⌄</span>
+</button>
+
+<div class="country-menu" id="countryMenu">
+<button class="country-option" data-flag="🇬🇧" data-language="English">🇬🇧 English</button>
+<button class="country-option" data-flag="🇺🇸" data-language="English (US)">🇺🇸 English (US)</button>
+<button class="country-option" data-flag="🇮🇳" data-language="हिन्दी">🇮🇳 हिन्दी</button>
+<button class="country-option" data-flag="🇵🇰" data-language="اردو">🇵🇰 اردو</button>
+<button class="country-option" data-flag="🇸🇦" data-language="العربية">🇸🇦 العربية</button>
+</div>
+</div>
+
+<button class="signup-button" onclick="openSignup()">Sign Up</button>
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+</div>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<p class="eyebrow">THE WORLD'S LARGEST MUSLIM MARRIAGE APP</p>
+<h1>Where Muslims<br><span>meet.</span></h1>
+<p class="hero-text">The Muslim marriage app helping Muslims find their perfect partner and get married.</p>
+<div class="hero-buttons">
+<button class="primary-button" onclick="openSignup()">Sign Up Free</button>
+<a href="gold.html" class="secondary-button">Discover Muzz Gold</a>
+</div>
+</div>
+
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85" alt="Muslim wedding couple">
+</div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+<div>
+<h2>20M+</h2>
+<p>Muslims worldwide</p>
+</div>
+<div>
+<h2>1M+</h2>
+<p>Success stories</p>
+</div>
+<div>
+<h2>190+</h2>
+<p>Countries</p>
+</div>
+<div>
+<h2>950+</h2>
+<p>New couples every day</p>
+</div>
+</section>
+
+<!-- INTRO -->
+<section class="intro-section">
+<div class="section-heading">
+<p class="eyebrow">FIND YOUR PERSON</p>
+<h2>Marriage starts with a conversation.</h2>
+<p>Meet like-minded Muslims who are looking for marriage. Chat, connect and get to know someone special.</p>
+</div>
+
+<div class="intro-grid">
+<div class="intro-card">
+<span>01</span>
+<h3>Find someone</h3>
+<p>Use powerful search filters to find people who match what matters to you.</p>
+</div>
+<div class="intro-card">
+<span>02</span>
+<h3>Start chatting</h3>
+<p>Connect privately and have meaningful conversations before meeting.</p>
+</div>
+<div class="intro-card">
+<span>03</span>
+<h3>Get married</h3>
+<p>Take the next step together and build your future.</p>
+</div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+<div class="feature-image">
+<img src="https://cdn.muzz.com/website-v4/img/mockups/index-v3/en-US/match.png?v=2" alt="Muzz matching">
+</div>
+<div class="feature-content">
+<p class="eyebrow">MEET BETTER</p>
+<h2>Made for Muslims looking for marriage.</h2>
+<div class="feature-list">
+<div>
+<h3>Search your way</h3>
+<p>Choose the qualities, values and preferences that matter most to you.</p>
+</div>
+<div>
+<h3>Chat for free</h3>
+<p>Start conversations with potential matches without paying.</p>
+</div>
+<div>
+<h3>Take things at your pace</h3>
+<p>Get to know someone properly before deciding what comes next.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CHAT -->
+<section class="split-section reverse">
+<div class="split-image">
+<img src="https://cdn.muzz.com/website-v4/img/mockups/index-v3/en-US/chat.png" alt="Muzz chat">
+</div>
+<div class="split-content">
+<p class="eyebrow">CHAT FOR FREE</p>
+<h2>Real conversations. Real connections.</h2>
+<p>Once you've matched, start chatting and learn more about each other in a private environment.</p>
+</div>
+</section>
+
+<!-- VIDEO -->
+<section class="split-section">
+<div class="split-content">
+<p class="eyebrow">VIDEO CALLING</p>
+<h2>Meet face-to-face from anywhere.</h2>
+<p>Free video calling lets you have a conversation before meeting in person.</p>
+</div>
+<div class="split-image">
+<img src="https://cdn.muzz.com/website-v4/img/mockups/index-v3/en-US/video_calling.png" alt="Muzz video calling">
+</div>
+</section>
+
+<!-- PRIVACY -->
+<section class="privacy-section">
+<div class="privacy-image">
+<img src="https://cdn.muzz.com/website-v4/img/mockups/index-v3/en-US/complete_privacy.png" alt="Complete privacy">
+</div>
+<div class="privacy-content">
+<p class="eyebrow">COMPLETE PRIVACY</p>
+<h2>Your privacy comes first.</h2>
+<p>We give you control over who sees you and how your profile is shared.</p>
+<div class="privacy-points">
+<p>✓ Screenshot blocking</p>
+<p>✓ Hidden photos</p>
+<p>✓ Private profiles</p>
+<p>✓ Selfie verification</p>
+</div>
+</div>
+</section>
+
+<!-- GOLD PREVIEW -->
+<section class="gold-preview">
+<div class="gold-preview-content">
+<p class="eyebrow">MUZZ GOLD</p>
+<h2>Find the right person faster.</h2>
+<p>Get more tools to help you find your perfect match.</p>
+<a href="gold.html" class="primary-button">Explore Gold</a>
+</div>
+<div class="gold-preview-image">
+<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=85" alt="Wedding">
+</div>
+</section>
+
+<!-- SUCCESS STORIES -->
+<section class="stories-preview">
+<div class="section-heading">
+<p class="eyebrow">SUCCESS STORIES</p>
+<h2>Over 1 million success stories.</h2>
+<p>Real people. Real connections. Real marriages.</p>
+</div>
+
+<div class="story-grid">
+<div class="story-card">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85" alt="Wedding couple">
+<h3>The long flight to forever</h3>
+<p>Sometimes your perfect match is worth crossing the world for.</p>
+</div>
+
+<div class="story-card">
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85" alt="Wedding celebration">
+<h3>From meeting to marriage</h3>
+<p>A beautiful Muzz story that turned into a lifelong journey.</p>
+</div>
+
+<div class="story-card">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Wedding">
+<h3>We found each other</h3>
+<p>Two people. One match. A lifetime together.</p>
+</div>
+</div>
+
+<a href="success-stories.html" class="outline-button">Read Success Stories</a>
+</section>
+
+<!-- BLOG -->
+<section class="blog-preview">
+<div class="section-heading">
+<p class="eyebrow">MUZZ BLOG</p>
+<h2>Advice for your marriage journey.</h2>
+<p>Relationships, lifestyle, community and everything Muzz.</p>
+</div>
+
+<div class="blog-grid">
+<article>
+<div class="blog-placeholder">RELATIONSHIPS</div>
+<h3>How to have better conversations</h3>
+<p>Simple ways to build meaningful connections.</p>
+</article>
+
+<article>
+<div class="blog-placeholder">LIFESTYLE</div>
+<h3>Finding the right person for you</h3>
+<p>What really matters when looking for marriage.</p>
+</article>
+
+<article>
+<div class="blog-placeholder">COMMUNITY</div>
+<h3>Muslim marriage stories</h3>
+<p>Stories and advice from the Muzz community.</p>
+</article>
+</div>
+
+<a href="blog.html" class="outline-button">Visit Muzz Blog</a>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<h2>Ready to meet someone special?</h2>
+<p>Join millions of Muslims looking for marriage.</p>
+<button class="primary-button" onclick="openSignup()">Sign Up Free</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-content">
+<div>
+<h3>Muzz</h3>
+<p>Where Muslims meet.</p>
+</div>
+<div>
+<h4>Explore</h4>
+<a href="gold.html">Gold</a>
+<a href="blog.html">Blog</a>
+<a href="success-stories.html">Success Stories</a>
+</div>
+<div>
+<h4>Information</h4>
+<span>Events</span>
+<span>Careers</span>
+</div>
+</div>
+<p class="copyright">© 2026 Muzz. All rights reserved.</p>
+</footer>
+
+<!-- SIGN UP MODAL -->
+<div class="signup-modal" id="signupModal">
+<div class="signup-box">
+<button class="close-modal" onclick="closeSignup()">×</button>
+<p class="eyebrow">JOIN MUZZ</p>
+<h2>Create your account</h2>
+<p>Start your journey towards finding your perfect partner.</p>
+
+<form onsubmit="submitSignup(event)">
+<input type="text" id="signupName" placeholder="Your name" required>
+<input type="email" id="signupEmail" placeholder="Email address" required>
+<select id="signupCountry" required>
+<option value="">Select your country</option>
+<option>India</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Pakistan</option>
+<option>Saudi Arabia</option>
+</select>
+<button type="submit" class="primary-button">Create Account</button>
+</form>
+
+<p id="signupMessage" class="signup-message"></p>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

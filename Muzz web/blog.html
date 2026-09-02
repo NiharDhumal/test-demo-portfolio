@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzz Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="nav-container">
+<a href="index.html" class="logo"><img src="https://cdn.muzz.com/website-v4/img/shared/logo-large.svg" alt="Muzz"></a>
+<nav class="nav-links">
+<a href="gold.html">Gold</a>
+<span class="nav-disabled">Events</span>
+<a href="blog.html" class="active">Blog</a>
+<span class="nav-disabled">Careers</span>
+<a href="success-stories.html">Success Stories</a>
+</nav>
+<div class="nav-right">
+<div class="country-selector">
+<button class="country-button" id="countryButton"><span id="selectedFlag">🇬🇧</span><span id="selectedLanguage">English</span><span>⌄</span></button>
+<div class="country-menu" id="countryMenu">
+<button class="country-option" data-flag="🇬🇧" data-language="English">🇬🇧 English</button>
+<button class="country-option" data-flag="🇺🇸" data-language="English (US)">🇺🇸 English (US)</button>
+<button class="country-option" data-flag="🇮🇳" data-language="हिन्दी">🇮🇳 हिन्दी</button>
+<button class="country-option" data-flag="🇵🇰" data-language="اردو">🇵🇰 اردو</button>
+<button class="country-option" data-flag="🇸🇦" data-language="العربية">🇸🇦 العربية</button>
+</div>
+</div>
+<button class="signup-button" onclick="openSignup()">Sign Up</button>
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+</div>
+</div>
+</header>
+
+<!-- BLOG HERO -->
+<section class="page-hero blog-hero">
+<p class="eyebrow">MUZZ BLOG</p>
+<h1>Advice for your <span>marriage journey.</span></h1>
+<p>Relationships, lifestyle, community and everything Muzz.</p>
+</section>
+
+<!-- BLOG CATEGORIES -->
+<section class="blog-categories">
+<button>All</button>
+<button>Relationships</button>
+<button>Lifestyle</button>
+<button>Community</button>
+<button>Muzz</button>
+</section>
+
+<!-- FEATURED BLOG -->
+<section class="featured-blog">
+<div class="featured-blog-image">
+<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1400&q=85" alt="Wedding">
+</div>
+<div class="featured-blog-content">
+<p class="eyebrow">FEATURED STORY</p>
+<h2>Finding someone who shares your values.</h2>
+<p>Building a meaningful relationship starts with understanding what matters to both of you.</p>
+<a href="#" class="outline-button">Read Story</a>
+</div>
+</section>
+
+<!-- BLOG POSTS -->
+<section class="blog-posts">
+<div class="section-heading">
+<p class="eyebrow">LATEST STORIES</p>
+<h2>From the Muzz community.</h2>
+</div>
+
+<div class="large-blog-grid">
+<article class="blog-post">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Wedding">
+<span>Relationships</span>
+<h3>How to make your first conversation meaningful</h3>
+<p>Starting a conversation can feel difficult. Here are some ways to make it easier.</p>
+<a href="#">Read more →</a>
+</article>
+
+<article class="blog-post">
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85" alt="Wedding">
+<span>Lifestyle</span>
+<h3>What should you look for in a partner?</h3>
+<p>Discover the qualities that can help build a strong marriage.</p>
+<a href="#">Read more →</a>
+</article>
+
+<article class="blog-post">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Couple">
+<span>Community</span>
+<h3>Stories from Muslims finding love</h3>
+<p>Meet members of the Muzz community and hear their experiences.</p>
+<a href="#">Read more →</a>
+</article>
+
+<article class="blog-post">
+<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=85" alt="Couple">
+<span>Muzz</span>
+<h3>How Muzz helps Muslims meet</h3>
+<p>Learn more about the features designed around Muslim marriage.</p>
+<a href="#">Read more →</a>
+</article>
+</div>
+</section>
+
+<!-- BLOG CTA -->
+<section class="final-cta">
+<h2>Ready to start your own story?</h2>
+<p>Join millions of Muslims looking for marriage.</p>
+<button class="primary-button" onclick="openSignup()">Sign Up Free</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-content">
+<div><h3>Muzz</h3><p>Where Muslims meet.</p></div>
+<div><h4>Explore</h4><a href="gold.html">Gold</a><a href="blog.html">Blog</a><a href="success-stories.html">Success Stories</a></div>
+<div><h4>Information</h4><span>Events</span><span>Careers</span></div>
+</div>
+<p class="copyright">© 2026 Muzz. All rights reserved.</p>
+</footer>
+
+<!-- SIGN UP MODAL -->
+<div class="signup-modal" id="signupModal">
+<div class="signup-box">
+<button class="close-modal" onclick="closeSignup()">×</button>
+<p class="eyebrow">JOIN MUZZ</p>
+<h2>Create your account</h2>
+<p>Start your journey towards finding your perfect partner.</p>
+<form onsubmit="submitSignup(event)">
+<input type="text" id="signupName" placeholder="Your name" required>
+<input type="email" id="signupEmail" placeholder="Email address" required>
+<select id="signupCountry" required>
+<option value="">Select your country</option>
+<option>India</option>
+<option>United Kingdom</option>
+<option>United States</option>
+<option>Pakistan</option>
+<option>Saudi Arabia</option>
+</select>
+<button type="submit" class="primary-button">Create Account</button>
+</form>
+<p id="signupMessage" class="signup-message"></p>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
